@@ -38,7 +38,7 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
     if (newChannel && camChannels.includes(newChannel.name)) {
         // Check if the camera is on
         if (newState.selfVideo) {
-            user.send(`Thank you for turning your camera on!`);
+            user.send(`Thank you for enabling your camera!`);
         } else {
             // Send warning message
             user.send(`Please turn on your camera to stay in ${newChannel.name}.`);
