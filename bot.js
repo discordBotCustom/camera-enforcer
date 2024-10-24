@@ -82,7 +82,6 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
         if (newState.selfVideo) {
             // Mark user as compliant if they turn on their camera
             warnedUser.compliant = true;
-            user.send('Thank you for turning on your camera!');
             delete warnedUsers[user.id]; // No need to monitor further
         }
     }
